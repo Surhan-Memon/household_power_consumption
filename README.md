@@ -1,2 +1,11 @@
-# household_power_consumption
-Analyzed household electricity consumption (2006–2008) using time series and EDA. Handled missing values, combined date &amp; time, visualized usage patterns, plotted distributions, and explored trends for active power, voltage, and sub-metering to reveal daily and seasonal energy consumption behaviors.
+This project analyzes the household electricity consumption dataset collected from December 2006 to December 2008. The dataset contains nine columns, including Date, Time, Global_active_power, Global_reactive_power, Voltage, Global_intensity, and three sub-metering readings (Sub_metering_1, Sub_metering_2, Sub_metering_3). The main objective of this analysis is to understand energy usage patterns over time and identify trends in consumption.
+
+The initial step involved loading the dataset and handling missing values. Missing entries were imputed using forward fill to maintain data continuity without losing important information. The Date and Time columns were combined into a single DateTime column and converted to datetime format for easier time series analysis. This allowed indexing the data by timestamp for plotting and aggregation.
+
+Exploratory Data Analysis (EDA) was performed to summarize the data characteristics. Descriptive statistics including mean, maximum, minimum, and standard deviation were computed for each numerical column. Histograms were plotted to visualize the distribution of values across key metrics, and a correlation heatmap was generated to examine relationships between variables.
+
+For time series analysis, Global_active_power was plotted over time to observe overall consumption patterns. Other variables such as Voltage and sub-metering readings were also visualized to compare household appliance usage. Seasonal trends were explored by aggregating data into hourly and daily averages, allowing identification of peak energy consumption periods during weekdays versus weekends and daytime versus nighttime.
+
+The analysis revealed clear patterns in electricity usage, showing higher consumption during evenings and reduced activity during nighttime. Sub-metering analysis highlighted which appliances contributed most to overall consumption. These insights can help in understanding household energy behavior and designing strategies for energy efficiency.
+
+Overall, this project demonstrates a practical approach to handling, cleaning, and visualizing time series energy data. It provides valuable insights into household power usage, while showcasing the use of Python libraries like pandas and matplotlib for data preprocessing and visualization.
